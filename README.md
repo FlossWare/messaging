@@ -12,6 +12,10 @@ This repository is intended to define message envelopes and delivery interfaces 
 - Pluggable transports
 - Diagnostics and contract tests
 
+## Event publication
+
+The shared publication and no-op behavior is specified in [Event Publication and No-Op Publisher Contract](docs/event-publication-and-noop-contract.md). A no-op publisher implements the same contract as transport-backed publishers but does not claim delivery, retention, or replay.
+
 ## Architectural boundaries
 
 - `loom` defines execution semantics; messaging may transport messages but does not define Loom orchestration.
